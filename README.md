@@ -4,8 +4,6 @@ A CLI Java application that implements a Caesar cipher, both encoding, and decod
 
 Author:Daniel Sambu
 
-# Live Link
-
 # Technologies Used
 JavaScript
 
