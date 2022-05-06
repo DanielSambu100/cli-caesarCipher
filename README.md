@@ -1,10 +1,9 @@
 # cli-caesarCipher
 
-A web application where my customers order different sizes of pizzas with one or more toppings, Version 1.2022.
+A CLI Java application that implements a Caesar cipher, both encoding, and decoding. The key is an integer from 1 to 25. This cipher rotates the letters of the alphabet (A to Z). The encoding replaces each letter with the 1st to 25th next letter in the alphabet (wrapping Z to A). So key 2 encrypts "HI" to "JK", but key 20 encrypts "HI" to "BC".
 
 Author:Daniel Sambu
 
-Dansam Pizza Place is an interactive web application that allows our customers to order different sizes of pizzas with one or more toppings
 # Live Link
 
 # Technologies Used
@@ -53,15 +52,11 @@ The system;
 * Display a depcryted string
 
 # BDD
-Establish the available system components and/or modules.
 
-Establish the available functional modules as per the user stories given.
+* Carry out unit test cases on the two project classes, each with its own test file, using the Red,Green,Refactor workflow.
 
-Designing and developing each module as required.
-
-Integrating each of the working modules into a fully functional system to achieve all the expected behaviors.
 # Known Bugs
-The pizza delivery module is not yet working, working on it. The application will still be undergoing more modifications as time goes by.
+The test cases and Java implementation are partially implemented. The application will still be undergoing more modifications as time goes by.
 
 Feel  free to contribute towards this project by sending your email to info@dansamsons.co.ke
 
