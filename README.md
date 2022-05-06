@@ -4,17 +4,6 @@ A CLI Java application that implements a Caesar cipher, both encoding, and decod
 
 Author:Daniel Sambu
 
-# Technologies Used
-JavaScript
-
-HTML5 
-
-CSS 
-
-Bootstrap5
-
-jQuery
-
 # Setup Instructions and Installation
 Clone this repository to a location in your file system/download zipped file.(git clone https://github.com/DanielSambu100/cli-caesarCipher.git)
 
@@ -56,7 +45,7 @@ The system;
 # Known Bugs
 The test cases and Java implementation are partially implemented. The application will still be undergoing more modifications as time goes by.
 
-Feel  free to contribute towards this project by sending your email to info@dansamsons.co.ke
+Feel  free to contribute towards this project by sending your email to daniel.wanyonyi@student.moringaschool.com
 
 # License
 MIT License attached.
