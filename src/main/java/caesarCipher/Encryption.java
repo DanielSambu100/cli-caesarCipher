@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-//A Java Program to illustrate Caesar Cipher Technique
+
 class Encryption {
     private String text;
     private Integer key;
@@ -63,6 +63,6 @@ class Encryption {
         String text = bufferedReader.readLine();
         System.out.println("Please enter your key between 1 and 25");
         Integer key = Integer.valueOf(bufferedReader.readLine());
-        System.out.println("Your cipher text is "+encrypt(text,key));
+        System.out.println("Your cipher text is:\n "+encrypt(text,key));
     }
 }
