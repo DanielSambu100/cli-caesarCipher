@@ -59,7 +59,7 @@ class Encryption {
     public static void main(String[] args) throws IOException {
         InputStreamReader streamReader = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(streamReader);
-        System.out.println("Please enter your plain text, preferrably a one-word text");
+        System.out.println("Please enter your plain text, preferably a one-word text");
         String text = bufferedReader.readLine();
         System.out.println("Please enter your key between 1 and 25");
         Integer key = Integer.valueOf(bufferedReader.readLine());
