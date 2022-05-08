@@ -6,6 +6,32 @@ import java.io.InputStreamReader;
 
 //A Java Program to illustrate Caesar Cipher Technique
 class Encryption {
+    private String text;
+    private Integer key;
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public Integer getKey() {
+        return key;
+    }
+
+    public void setKey(Integer key) {
+        this.key = key;
+    }
+
+    public Encryption(String text, Integer key) {
+        this.text = text;
+        this.key = key;
+
+
+    }
+
     // Encrypts plain text with a key
     public static StringBuffer encrypt(String text, int key)
     {
@@ -33,7 +59,7 @@ class Encryption {
     public static void main(String[] args) throws IOException {
         InputStreamReader streamReader = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(streamReader);
-        System.out.println("Please enter your plain text");
+        System.out.println("Please enter your plain text, preferrably a one-word text");
         String text = bufferedReader.readLine();
         System.out.println("Please enter your key between 1 and 25");
         Integer key = Integer.valueOf(bufferedReader.readLine());
