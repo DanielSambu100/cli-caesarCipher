@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import static sun.security.util.Debug.args;
+
 
 class Decryption {
     private String cipherText;
@@ -33,30 +35,24 @@ class Decryption {
     }
 
     // Encrypts plain text with a key
-    public static StringBuffer encrypt(String cipherText, int key)
-    {
+    public static StringBuffer encrypt(String cipherText, int key) {
         StringBuffer result= new StringBuffer();
 
         for (int i=0; i<cipherText.length(); i++)
         {
-            if (Character.isUpperCase(cipherText.charAt(i)))
-            {
-                char ch = (char)(((int)cipherText.charAt(i) +
-                        key + 65) % 26 + 65);
-                result.append(ch);
+            if(cipherText[i] == true){
+                result+=char(int(cipherText[i]+key-65)%26 +65);
             }
-            else
-            {
-                char ch = (char)(((int)cipherText.charAt(i) +
-                        key + 97) % 26 + 97);
-                result.append(ch);
-            }
+            //Encrypt Lowercase letters
+	else {
+            result+=char(int(cipherText[i]+key-97)%26 +97);
         }
+        //Return the resulting string
         return result;
-    }
+        }
 
     // Driver code
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         InputStreamReader streamReader = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(streamReader);
         System.out.println("Please enter your cipher text, preferably a one-word text");
