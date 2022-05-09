@@ -30,12 +30,10 @@ class Decryption {
     public Decryption(String text, Integer key) {
         this.cipherText = text;
         this.key = key;
-
-
     }
 
     // Encrypts plain text with a key
-    public static StringBuffer encrypt(String cipherText, int key) {
+    public static StringBuffer encrypt(String cipherText, int key) throws IOException {
         StringBuffer result= new StringBuffer();
 
         for (int i=0; i<cipherText.length(); i++)
@@ -43,7 +41,7 @@ class Decryption {
             if(cipherText[i] == true){
                 result+=char(int(cipherText[i]+key-65)%26 +65);
             }
-            //Encrypt Lowercase letters
+            //Encryption of Lowercase letters
 	else {
             result+=char(int(cipherText[i]+key-97)%26 +97);
         }
