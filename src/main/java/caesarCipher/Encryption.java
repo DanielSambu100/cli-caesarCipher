@@ -63,7 +63,7 @@ class Encryption {
         String text = bufferedReader.readLine();
         System.out.println("Please enter your key between 1 and 25");
         Integer key = Integer.valueOf(bufferedReader.readLine());
-//        calling the encrypt() method
+//        calling the encrypt method
         System.out.println("Your cipher text is:\n "+encrypt(text,key));
     }
 }
