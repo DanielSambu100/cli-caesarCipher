@@ -36,8 +36,11 @@ class Decryption {
     public static StringBuffer encrypt(String cipherText, int key) throws IOException {
         StringBuffer result= new StringBuffer();
 
+//        iteration
         for (int i=0; i<cipherText.length(); i++)
         {
+//            decision-making
+        }
             if(cipherText[i] == true){
                 result+=char(int(cipherText[i]+key-65)%26 +65);
             }
@@ -45,11 +48,11 @@ class Decryption {
 	else {
             result+=char(int(cipherText[i]+key-97)%26 +97);
         }
-        //Return the resulting string
+        //Return result (string)
         return result;
         }
 
-    // Driver code
+    // java program entry point
     public static void main(String[] args) {
         InputStreamReader streamReader = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(streamReader);
