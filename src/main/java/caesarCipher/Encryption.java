@@ -36,7 +36,7 @@ class Encryption {
     public static StringBuffer encrypt(String text, int key)
     {
         StringBuffer result= new StringBuffer();
-
+//logic implementation
         for (int i=0; i<text.length(); i++)
         {
             if (Character.isUpperCase(text.charAt(i)))
@@ -55,7 +55,7 @@ class Encryption {
         return result;
     }
 
-    // Driver code
+    // java program entry point
     public static void main(String[] args) throws IOException {
         InputStreamReader streamReader = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(streamReader);
@@ -63,6 +63,7 @@ class Encryption {
         String text = bufferedReader.readLine();
         System.out.println("Please enter your key between 1 and 25");
         Integer key = Integer.valueOf(bufferedReader.readLine());
+//        calling the encrypt() method
         System.out.println("Your cipher text is:\n "+encrypt(text,key));
     }
 }
